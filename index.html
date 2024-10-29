@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,138 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranay Jaiswal - CV</title>
     <style>
-        /* Basic reset */
+        /* Reset and Basic Styling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: Arial, sans-serif;
             color: #333;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-            padding: 20px;
+            background: linear-gradient(120deg, #e0f7fa, #ffffff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
-
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-
-        h1, h2, h3 {
-            color: #333;
-        }
-
         h1 {
             text-align: center;
+            color: #007acc;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
             margin-bottom: 20px;
         }
-
-        h2 {
-            margin-top: 20px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-
         p, li {
             margin-bottom: 10px;
+            line-height: 1.6;
         }
-
+        .contact-info, .section {
+            margin-bottom: 20px;
+        }
+        .contact-info span, .section h3 {
+            display: block;
+            font-weight: bold;
+        }
+        .section h3 {
+            margin-top: 20px;
+            color: #007acc;
+            font-size: 1.5em;
+        }
         ul {
             list-style-type: disc;
             margin-left: 20px;
         }
-
-        .contact-info, .section {
-            margin-bottom: 20px;
-        }
-
-        .contact-info span {
-            display: block;
-            margin-bottom: 5px;
-        }
-
         .highlight {
             color: #007acc;
             font-weight: bold;
         }
+
+        /* Fancy animations and styles */
+        .container {
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #007acc;
+            margin: 10px auto;
+        }
+        .fadeIn {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container fadeIn">
         <h1>Pranay Jaiswal</h1>
         <div class="contact-info">
-            <span><strong>Email:</strong> pranay.jaiswal@example.com</span>
-            <span><strong>Location:</strong> London, UK</span>
-            <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pranayjaiswal" target="_blank">Pranay Jaiswal</a></span>
-            <span><strong>GitHub:</strong> <a href="https://github.com/username" target="_blank">github.com/username</a></span>
+            <span>Email: pranaygreat@gmail.com</span>
+            <span>Location: London, UK</span>
+            <span>LinkedIn: <a href="https://www.linkedin.com/in/pranayjaiswal" target="_blank">Pranay Jaiswal</a></span>
+            <span>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></span>
         </div>
 
         <div class="section">
-            <h2>Profile</h2>
+            <h2>Profile Summary</h2>
             <p>
-                Highly skilled <span class="highlight">Salesforce Technical Architect</span> with over 10 years of experience in 
-                architecting and implementing scalable Salesforce solutions, especially in the Fintech ecosystem.
-                Recognized top 15 contributor on Salesforce StackExchange globally.
+                Experienced <span class="highlight">Salesforce Technical Architect</span> with over a decade in Information Technology, specializing in the Salesforce Platform within the Fintech sector. Skilled in Salesforce development, Lightning, Apex, and architecting solutions for credit products such as Car Finance, Personal Loans, Credit Cards, and more. Top 15 contributor on Salesforce StackExchange worldwide.
             </p>
         </div>
 
         <div class="section">
-            <h2>Professional Experience</h2>
-            <h3>Amplifi Capital - Salesforce Practice Lead</h3>
-            <p>Leading the design and implementation of Salesforce solutions across Service, Experience, and Marketing Clouds.</p>
+            <h2>Certifications</h2>
             <ul>
-                <li>Scaled the Salesforce team from 1 to 20+ engineers and introduced core Apex frameworks and CI/CD pipeline.</li>
-                <li>Focused on ROI maximization, customer conversion improvements, and process enhancements.</li>
-                <li>Guided and mentored team members to pursue certifications and career growth.</li>
+                <li>Salesforce Certified Technical Architect (Working towards CTA)</li>
+                <li>Salesforce Certified Application Architect</li>
+                <li>Salesforce Certified System Architect</li>
+                <li>Salesforce Certified Platform Developer I</li>
+                <li>Salesforce Certified Platform Developer II</li>
+                <li>Salesforce Certified Advanced Administrator</li>
+                <li>Salesforce Certified Sales Cloud Consultant</li>
+                <li>Salesforce Certified Service Cloud Consultant</li>
+                <li>Salesforce Certified Experience Cloud Consultant</li>
+                <li>Salesforce Certified Data Architecture & Management Designer</li>
+                <li>Salesforce Certified Sharing & Visibility Designer</li>
+                <li>Salesforce Certified Integration Architecture Designer</li>
+                <li>Salesforce Certified Identity & Access Management Designer</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <h3>Amplifi Capital (My Community Finance) - Principal Engineer / Technical Architect</h3>
+            <ul>
+                <li>Led development of the core Salesforce platform, boosting conversion rates by 15%, adding £20M revenue.</li>
+                <li>Implemented Salesforce OmniChannel, WhatsApp integration, and a data warehouse with Databricks.</li>
+                <li>Grew the team from 1 to 14 Salesforce developers and initiated a Graduate Program, mentoring new talents.</li>
             </ul>
 
-            <h3>Self-Employed Salesforce Architect Consultant</h3>
-            <p>Architected solutions for multiple clients, leveraging <span class="highlight">Service Cloud</span>, <span class="highlight">Experience Cloud</span>, and <span class="highlight">Salesforce Core</span>.</p>
+            <h3>Oodle Car Finance - Senior Salesforce Developer</h3>
             <ul>
-                <li>Provided tailored solutions to Fintech clients, focusing on scalability and user experience.</li>
-                <li>Helped clients achieve efficient data management and streamlined customer services.</li>
+                <li>Architected a full loan application processing system for car finance, including third-party credit checks.</li>
+                <li>Designed dealer login via Communities and created custom Lightning web components for user needs.</li>
+                <li>Implemented CI/CD flows and conducted regular code reviews for optimal team productivity.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <h3>Amplifi Capital / My Community Finance</h3>
+            <ul>
+                <li>Managed end-to-end development for credit union solutions with integration to Clearscore and Moneysupermarket.</li>
+                <li>Enhanced customer experience through a redesigned Quote Accept page using LWC, boosting conversions.</li>
+            </ul>
+
+            <h3>Capital First CRM Implementation</h3>
+            <ul>
+                <li>Led the migration of core products to Salesforce, integrating credit data from CIBIL, Equifax, and Experian.</li>
+                <li>Created an application scoring engine in SFDC for loan approval, facilitating improved risk assessments.</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Skills</h2>
             <ul>
-                <li>Salesforce Platform: Apex, LWC, Service Cloud, Experience Cloud</li>
-                <li>Programming Languages: Apex, Java</li>
-                <li>Other Tools: CI/CD, Data Backup Strategies, Agile Methodologies</li>
+                <li>Salesforce Platform: Apex, Lightning Web Components, Service Cloud, Experience Cloud</li>
+                <li>Programming Languages: Apex, Java, Python</li>
+                <li>Other Tools: CI/CD, Data Backup, Agile, AWS, Databricks</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Education</h2>
-            <p><strong>Bachelor's in Computer Science</strong> - University Name</p>
-        </div>
-
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Salesforce Certified Technical Architect</li>
-                <li>Salesforce Certified Application Architect</li>
-            </ul>
+            <p><strong>Bachelor of Engineering in Computer Science</strong> - Nagpur University, India (2010-2014)</p>
         </div>
 
         <div class="section">
             <h2>Interests</h2>
-            <p>Product management, mentoring, continuous improvement, cloud solutions, and technology innovation.</p>
+            <p>Product Management, Mentoring, Continuous Improvement, Cloud Solutions, and Tech Innovation.</p>
         </div>
     </div>
 
     <script>
-        // JavaScript for future enhancements or interactivity
-        document.addEventListener("DOMContentLoaded", function () {
-            console.log("CV loaded");
+        // Future JavaScript functionality can be added here
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("CV Loaded Successfully");
         });
     </script>
 </body>
